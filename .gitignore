@@ -5,6 +5,16 @@ __pycache__/
 
 # C extensions
 *.so
+*.pdf
+*.json
+
+# Mine
+depi.mp4
+data
+.vscode
+database
+pdf
+
 
 # Distribution / packaging
 .Python
