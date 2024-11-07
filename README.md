@@ -21,7 +21,7 @@ The chatbot is powered by advanced Language Learning Models (LLMs) that act as i
 The solution architecture leverages two primary tools:
 
 1. **Tool 1**: Retrieves personal information from the database for personalized responses.
-2. **Tool 2**: Executes a Retrieval-Augmented Generation (RAG) process with enhanced prompts to handle general university data.
+2. **Tool 2**: Executes a Retrieval-Augmented Generation process with enhanced prompts to handle general university data.
 
 ---
 
@@ -48,8 +48,8 @@ The system collects general university data in JSON format and processes it with
 The backend follows an **MVC design pattern** with the following key technologies:
 
 - **FastAPI** for building RESTful APIs.
-- **Pydantic** for data validation.
-- **MongoDB** (using the "mongo:7-jammy" Docker image) for storage, along with **Motor** for asynchronous database operations.
+- **Pydantic** for data validation and database schemas.
+- **MongoDB** ("mongo:7-jammy" Docker image) for storage, along with **Motor** for asynchronous database operations and indexing.
 - **Chroma Vector Database** for storing embeddings, enabling efficient retrieval based on cosine similarity.
 
 The chatbot system supports secure login/logout endpoints to protect user data, and its server-side design ensures smooth, consistent performance.
